@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Template Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/home.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="login" id="test" ><p>
+      <h1>Template Site</h1>
+      <br>
+      <form action="" method="post">
+
+        <input type="submit" style="margin:5px;" class="btn btn-default" name="Navigation" value="Navigation">
+
+
+
+      </form>
+      {% if error %}
+        <p class="error" style="color:white"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </p></div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Deeper In: Second Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/home.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="login" id="test" >
+      <h1>Deeper in</h1>
+      <br>
+      <fade><form action="" method="post">
+
+        {% if passText %}
+          <h1>You passed: {{passText}}</h1>
+        {% endif %}
+        <input type="text" placeholder="Enter Text to pass to code" name="passToCode" required="required" value="{{
+          request.form.passToCode }}">
+
+        <input type="submit" style="margin:5px;" class="btn btn-default" name="PassText" value="PassText">
+        <input type="submit" style="margin:5px;" class="btn btn-default" name="Back" value="Back">
+
+
+
+      </form></fade>
+
+      {% if error %}
+        <p class="error" style="color:white"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </p></div>
+  </body>
+</html>
